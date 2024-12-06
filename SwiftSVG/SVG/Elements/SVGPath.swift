@@ -86,7 +86,7 @@ final class SVGPath: SVGShapeElement, ParsesAsynchronously, DelaysApplyingAttrib
             
             let pathDPath = UIBezierPath()
             pathDPath.move(to: CGPoint.zero)
-
+            
             let parsePathClosure = {
                 var previousCommand: PreviousCommand? = nil
                 for thisPathCommand in PathDLexer(pathString: workingString) {
